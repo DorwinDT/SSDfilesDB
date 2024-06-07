@@ -1,1 +1,0 @@
-sem pridu csv subory zaslane z SSD
