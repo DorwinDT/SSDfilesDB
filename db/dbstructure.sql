@@ -69,6 +69,16 @@ CREATE TABLE `ElectricityConsumption` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 -- Dump completed on 2024-06-06 10:58:12
+-- ElectricityConsumptionKWH source
+
+CREATE OR REPLACE
+ALGORITHM = UNDEFINED VIEW `ElectricityConsumptionKWH` AS
+select
+    `ElectricityConsumption`.`timestamp` AS `timestamp`,
+    `ElectricityConsumption`.`consumption` / 4 AS `consumption`,
+    `ElectricityConsumption`.`export` / 4 AS `export`
+from
+    `ElectricityConsumption`;
 
 INSERT INTO EIC
 (id, Name, Code)
