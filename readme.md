@@ -23,7 +23,7 @@ Adresar je v 5 minutovych intervaloch kontrolovany na nove subory a tie su dohra
 - nainstalovany [docker](https://www.docker.com/)
 ## konfiguracia
 ### MySQL
-**v roote projektu musi byt adresar mysqlData**
+**v roote projektu musi byt adresar mysqlData** - TREBA HO RUCNE VYUTVORIT!
 
 **v subore dbstructure.sql na konci treba zmenit EIC Vaseho odberneho miesta!**
 
