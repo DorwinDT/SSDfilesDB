@@ -6,7 +6,12 @@ To umozni ich naslednu analyzu napr. v Grafana
 ## spustenie Docker kontajnerov
 v root adresari projektu spustit:
 
-    docker-compose up  --force-recreate --build -d
+    docker-compose up -d
+
+## stopnutie Docker kontajnerov
+v root adresari projektu spustit:
+
+    docker-compose down
     
 ## SSDfiles 
 Do adresara SSDFiles sa davaju csv subory posielane SSD distribuciou.
