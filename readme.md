@@ -21,6 +21,23 @@ v root adresari projektu spustit:
 Do adresara SSDFiles sa davaju csv subory posielane SSD distribuciou.
 Adresar je v 5 minutovych intervaloch kontrolovany na nove subory a tie su dohrate do MySQL databazy
 
+### SSD na zdielanom disku.
+je mozne SSD subory mat aj na zdelanom disku. v tom pripade je potrebne mat nastavenia v docker-compose.yml:
+
+        volumes:
+          - ./phpScripts:/phpScripts:ro
+          #kde su ulozene subory z SSD a ich mapovanie do kontajnera
+          #- ./SSDfiles:/SSD
+          #mapujeme zo sharovaneho disku
+          - data:/SSD
+    volumes:
+      my-db:
+      data:
+        driver: local
+        driver_opts:
+          type: cifs
+          device: "//192.168.x.x/home/SSD"
+          o: "username=usizvatel,password=heslo,uid=1000,gid=1000"
 
 # prerequisities
 
