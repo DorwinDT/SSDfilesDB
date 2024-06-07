@@ -8,6 +8,10 @@ v root adresari projektu spustit:
 
     docker-compose up -d
 
+pripadne, pre nuteny build (v pripade zmeny struktury DB a pod):
+    
+    docker-compose up -d --force-recreate --build
+
 ## stopnutie Docker kontajnerov
 v root adresari projektu spustit:
 
