@@ -25,9 +25,9 @@ Adresar je v 5 minutovych intervaloch kontrolovany na nove subory a tie su dohra
 # prerequisities
 
 - nainstalovany [docker](https://www.docker.com/)
-## konfiguracia
+## KONFIGURACIA
 ### MySQL
-**v roote projektu musi byt adresar mysqlData** - TREBA HO RUCNE VYUTVORIT!
+**v roote projektu musi byt adresar mysqlData** - TREBA HO RUCNE VYTVORIT! (docker na NAS ho nevytvori automaticky, na Ubuntu ano)
 
 **v subore dbstructure.sql na konci treba zmenit EIC Vaseho odberneho miesta!**
 
