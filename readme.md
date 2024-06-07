@@ -37,7 +37,7 @@ je mozne SSD subory mat aj na zdelanom disku (NAS, alebo ulozisko, kde sa synchr
         driver_opts:
           type: cifs
           device: "//192.168.x.x/home/SSD"
-          **o: "username=uszivatel,password=heslo,uid=1000,gid=1000"**
+          o: "username=uszivatel,password=heslo,uid=1000,gid=1000"
 
 # prerequisities
 
