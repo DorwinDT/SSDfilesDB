@@ -39,6 +39,9 @@ je mozne SSD subory mat aj na zdelanom disku (NAS, alebo ulozisko, kde sa synchr
           device: "//192.168.x.x/home/SSD"
           o: "username=uszivatel,password=heslo,uid=1000,gid=1000"
 
+## .env
+subor, kde su ulozene mena/hesla pre pristup do MySQL databazy. pri vytvoreni docker kontajnera sa nastavia udaje podla tu ulozeneho suboru
+
 # prerequisities
 
 - nainstalovany [docker](https://www.docker.com/)
