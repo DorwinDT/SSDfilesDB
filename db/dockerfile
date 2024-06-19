@@ -3,5 +3,4 @@ FROM mysql:5.7
 USER root
 
 COPY ./dbstructure.sql /docker-entrypoint-initdb.d/dbstructure.sql
-RUN chown root: /docker-entrypoint-initdb.d/dbstructure.sql
-run chmod 755 /docker-entrypoint-initdb.d/dbstructure.sql
+RUN chown root: /docker-entrypoint-initdb.d/dbstructure.sql && chmod 755 /docker-entrypoint-initdb.d/dbstructure.sql
